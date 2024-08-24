@@ -29,7 +29,7 @@ private:
                     continue;
                 
                 distances[nV] = d;
-                minHeap.push({curK + 1, curW + nW, nV});
+                minHeap.push({curK + 1, d, nV});
             }
         }
     }
