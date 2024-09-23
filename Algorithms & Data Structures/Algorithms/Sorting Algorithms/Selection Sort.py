@@ -11,4 +11,3 @@ def selectionSort(array: List[int]):
                 min_idx = idx
 
         array[i], array[min_idx] = array[min_idx], array[i]
-    return array

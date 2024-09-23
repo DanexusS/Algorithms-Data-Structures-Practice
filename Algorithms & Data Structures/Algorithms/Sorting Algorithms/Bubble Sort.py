@@ -16,5 +16,3 @@ def bubble_sort(array: List[int]):
         
         if not is_swapped:
             break
-            
-    return array
