@@ -1,4 +1,7 @@
-def bubble_sort(array):
+from typing import List
+
+
+def bubble_sort(array: List[int]):
     n = len(array)
     
     for i in range(n):
