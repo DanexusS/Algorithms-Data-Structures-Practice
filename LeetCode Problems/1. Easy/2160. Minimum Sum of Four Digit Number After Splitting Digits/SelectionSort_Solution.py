@@ -1,8 +1,8 @@
 class Solution:
     def minimumSum(self, num: int) -> int:
         s = str(num)
-        n = len(str(num))
-        temp = [int(i) for i in str(num)]
+        n = len(s)
+        temp = [int(i) for i in s]
 
         for i in range(n):
             min_idx = i

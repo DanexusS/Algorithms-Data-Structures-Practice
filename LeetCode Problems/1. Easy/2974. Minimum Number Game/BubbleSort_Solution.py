@@ -4,8 +4,8 @@ from typing import List
 class Solution:
     def numberGame(self, nums: List[int]) -> List[int]:
         n = len(nums)
-
         temp = nums.copy()
+
         for i in range(n):
             is_swapped = False
             for j in range(n - i - 1):

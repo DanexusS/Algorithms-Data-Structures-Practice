@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def bubble_sort(self, array: List[int]) -> None:
         n = len(array)
@@ -14,7 +17,6 @@ class Solution:
             
             if not is_swapped:
                 break
-            
 
     def minMovesToSeat(self, seats: List[int], students: List[int]) -> int:
         self.bubble_sort(seats)

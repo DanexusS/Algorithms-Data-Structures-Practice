@@ -2,24 +2,21 @@ from typing import List
 
 
 class Solution:
-    def bubble_sort(self, array: List[int]):
-        n = len(array)
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        temp = nums.copy()
 
         for i in range(n):
             is_swapped = False
             for j in range(n - i - 1):
-                if array[j] <= array[j + 1]:
+                if temp[j] <= temp[j + 1]:
                     continue
 
-                array[j], array[j + 1] = array[j + 1], array[j]
+                temp[j], temp[j + 1] = temp[j + 1], temp[j]
                 is_swapped = True
 
             if not is_swapped:
                 break
-
-    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
-        temp = nums.copy()
-        self.bubble_sort(temp)
 
         res = []
         for n in nums:
